@@ -7,8 +7,8 @@ services:
     privileged: true
     volumes:
       - type: bind
-        source: ./myapp
-        target: /home/ec2-user/myapp
+        source: ./work
+        target: /home/ec2-user/work
       - type: bind
         source: ./.aws
         target: /home/ec2-user/.aws
