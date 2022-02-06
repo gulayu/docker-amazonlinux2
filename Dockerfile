@@ -44,9 +44,7 @@ RUN useradd "ec2-user" && echo "ec2-user ALL=NOPASSWD: ALL" >> /etc/sudoers
 RUN sudo amazon-linux-extras install ruby3.0 -y
 
 # install rails
-WORKDIR /home/ec2-user/myapp
-COPY Gemfile /home/ec2-user/myapp/Gemfile
-RUN bundle install
+RUN gem install -v 6.1.4 rails
 
 # init
 CMD ["/sbin/init"]
