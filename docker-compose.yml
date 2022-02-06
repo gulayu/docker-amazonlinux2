@@ -1,15 +1,15 @@
 version: "3.9"
 
 services:
-  amzn-linux-2:
+  app:
     build: .
     container_name: amzn-linux-2
     privileged: true
     restart: always
     volumes:
       - type: bind
-        source: ./share
-        target: /share
+        source: ./myapp
+        target: /home/ec2-user/myapp
       - type: bind
         source: ./.aws
         target: /home/ec2-user/.aws
