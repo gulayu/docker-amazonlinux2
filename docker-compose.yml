@@ -2,7 +2,7 @@ version: "3.9"
 
 services:
   app:
-    build: .
+    build: ./infra/ruby
     container_name: amzn-linux-2
     privileged: true
     volumes:
@@ -12,3 +12,10 @@ services:
       - type: bind
         source: ./.aws
         target: /home/ec2-user/.aws
+  db:
+    build: ./infra/mysql
+    volumes:
+      - db-store:/var/lib/mysql
+
+volumes:
+  db-store:
