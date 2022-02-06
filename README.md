@@ -2,9 +2,9 @@
 amazon-linux-2のイメージににrubyとrailsをインストールするところまでを実行します。
 
 ## 環境
-mac mojave 10.14.6
-Docker version 20.10.8, build 3967b7d
-docker-compose version 1.29.2, build 5becea4c
+mac mojave 10.14.6  
+Docker version 20.10.8, build 3967b7d  
+docker-compose version 1.29.2, build 5becea4c  
 
 ## 手順
 ### repositoryからcloneしてくる
